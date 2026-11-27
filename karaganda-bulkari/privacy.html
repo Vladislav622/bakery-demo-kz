@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <!-- Демо для показа владельцу: не индексировать -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Документ</title>
+  <meta name="description" content="">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/demo.css">
+</head>
+<body class="doc-page" data-doc="privacy">
+<!-- Текст документа подставляется из js/legal-texts.js, реквизиты — из js/config.js → legal.
+     Типовой шаблон. Перед использованием проверьте у юриста РК. -->
+<header class="doc-nav">
+  <a class="nav__brand" href="index.html" data-doc-brand></a>
+  <div class="doc-nav__right">
+    <a class="doc-nav__back" href="index.html" data-doc-back>← На главную</a>
+    <div data-lang-slot></div>
+  </div>
+</header>
+<main class="doc"><article data-doc-body></article></main>
+<footer class="doc-foot" data-doc-links></footer>
+<script src="js/config.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/demo.js"></script>
+<script src="js/legal-texts.js"></script>
+<script src="js/legal-page.js"></script>
+</body>
+</html>
