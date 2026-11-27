@@ -1,0 +1,8 @@
+/* Плашка демо-версии (projects/_tools/demo) */
+.demo-badge {
+  position: fixed; left: 50%; bottom: 10px; translate: -50% 0; z-index: 90;
+  max-width: calc(100vw - 24px); padding: 7px 14px; border-radius: 999px;
+  background: rgba(23, 34, 29, .82); color: #F2EFE7; font: 500 11.5px/1.35 var(--sans, sans-serif);
+  text-align: center; pointer-events: none; box-shadow: 0 10px 30px -12px rgba(0, 0, 0, .5);
+}
+@media (max-width: 1080px) { .demo-badge { bottom: 78px; } }
