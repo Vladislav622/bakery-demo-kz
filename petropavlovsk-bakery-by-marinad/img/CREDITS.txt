@@ -1,0 +1,33 @@
+Демо-фото: Unsplash (https://unsplash.com/license) — бесплатно, в т.ч. для коммерческих проектов, указание автора не обязательно.
+Нельзя продавать сами фото отдельно или как фотобанк. Для клиента лучше заменить на его собственные фото.
+
+croissant.jpg  https://images.unsplash.com/photo-1681218079567-35aef7c8e7e4
+croissant-white.jpg  https://images.unsplash.com/photo-1691480162735-9b91238080f6
+pain.jpg  https://images.unsplash.com/photo-1564354273277-c6d4b8532100
+almond.jpg  https://images.unsplash.com/photo-1625425404751-19b16c027511
+cinnabon.jpg  https://images.unsplash.com/photo-1764281469526-e1c378515e6f
+eclair.jpg  https://images.unsplash.com/photo-1784841399281-40c323e95339
+cheesecake.jpg  https://images.unsplash.com/photo-1638519595578-0cc8d56cf7c6
+tart.jpg  https://images.unsplash.com/photo-1646321155195-44f0a4f91d1b
+chocobun.jpg  https://images.unsplash.com/photo-1588079910782-1177c63bbab2
+bun.jpg  https://images.unsplash.com/photo-1769424052131-9044fece031e
+bun-plate.jpg  https://images.unsplash.com/photo-1681218225051-796cab7db4f9
+muffin.jpg  https://images.unsplash.com/photo-1578632398050-cccbc1461ab9
+espresso.jpg  https://images.unsplash.com/photo-1579992357154-faf4bde95b3d
+cappuccino.jpg  https://images.unsplash.com/photo-1760306081298-93e10f2be897
+flatwhite.jpg  https://images.unsplash.com/photo-1760175445000-0e01e193d1cd
+latte.jpg  https://images.unsplash.com/photo-1760163178873-7644a924519e
+raf.jpg  https://images.unsplash.com/photo-1589396575653-c09c794ff6a6
+coldbrew.jpg  https://images.unsplash.com/photo-1461023058943-07fcbe16d735
+icelatte.jpg  https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5
+matcha.jpg  https://images.unsplash.com/photo-1749280447307-31a68eb38673
+lemonade.jpg  https://images.unsplash.com/photo-1623084921164-4a8c5c37a912
+beans.jpg  https://images.unsplash.com/photo-1447933601403-0c6688de566e
+interior.jpg  https://images.unsplash.com/photo-1583354608715-177553a4035e
+bread.jpg  https://images.unsplash.com/photo-1767065888377-e5ffb4e39645
+bakery.jpg  https://images.unsplash.com/photo-1568254183919-78a4f43a2877
+flatlay.jpg  https://images.unsplash.com/photo-1515823662972-da6a2e4d3002
+barista.jpg  https://images.unsplash.com/photo-1670404161009-29548c027d06
+pain-plate.jpg  https://images.unsplash.com/photo-1681218424681-b4f8228ecea9
+eclair-2.jpg  https://images.unsplash.com/photo-1582217308209-2207886c55bd
+latte-2.jpg  https://images.unsplash.com/photo-1593443320739-77f74939d0da
