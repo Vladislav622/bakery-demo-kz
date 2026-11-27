@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <!-- Демо для показа владельцу: не индексировать -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- title, description и Open Graph подставляются из js/config.js на выбранном языке.
+       Мессенджеры читают превью ссылки без JavaScript, поэтому после адаптации
+       продублируйте здесь название, описание, адрес сайта и картинку. -->
+  <title>Кофейня и пекарня</title>
+  <meta name="description" content="Свежая выпечка и кофе. Предзаказ на сайте и самовывоз из кофеен.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Кофейня и пекарня">
+  <meta property="og:description" content="Свежая выпечка и кофе. Предзаказ на сайте и самовывоз из кофеен.">
+  <meta property="og:image" content="img/flatlay.jpg">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:locale:alternate" content="kk_KZ">
+  <link rel="icon" href="data:,">
+  <!-- Шрифты лежат в папке сайта: страница не обращается к внешним сервисам -->
+  <link rel="preload" href="fonts/cormorant-garamond-cyrillic-034e3f.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-cyrillic-4f4a82.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope-cyrillic-9f2868.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+
+<!-- ============ ШАПКА ============ -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top" data-brand></a>
+  <nav class="nav__links" data-nav data-i18n-aria="menuAria"></nav>
+  <div class="nav__right">
+    <div class="contacts-dd">
+      <button class="nav__ghost" data-dd-toggle aria-expanded="false">
+        <span class="dot"></span> <span data-i18n="footer.contactsBtn">Наши контакты</span>
+        <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 4l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+      </button>
+      <div class="contacts-dd__panel" data-dd-panel></div>
+    </div>
+    <div data-lang-slot></div>
+    <button class="nav__cart" data-open-cart data-i18n-aria="cart.open">
+      <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z M9 8V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      <span data-i18n="nav.order">Заказ</span><b class="nav__count" data-cart-count>0</b>
+    </button>
+    <button class="nav__burger" data-burger data-i18n-aria="menuAria"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="progress" aria-hidden="true"><i data-progress></i></div>
+
+<main id="top">
+
+  <!-- ============ 1. ПЕРВЫЙ ЭКРАН ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__glow"></div>
+    <div class="hero__beans" data-beans></div>
+    <h1 class="hero__title">
+      <span class="hero__l1" data-hero-l1></span>
+      <span class="hero__l2" data-hero-l2></span>
+    </h1>
+    <div class="cup" data-cup aria-hidden="true">
+      <div class="cup__steam"><i></i><i></i><i></i></div>
+      <div class="cup__lid"></div>
+      <div class="cup__body">
+        <div class="cup__stripe cup__stripe--top"></div>
+        <div class="cup__sleeve">
+          <div class="cup__emblem">
+            <svg viewBox="0 0 100 100"><defs><path id="cupCircle" d="M50,50 m-36,0 a36,36 0 1,1 72,0 a36,36 0 1,1 -72,0"/></defs>
+              <text><textPath href="#cupCircle" data-cup-text></textPath></text></svg>
+            <span class="cup__logo" data-cup-logo></span>
+          </div>
+        </div>
+        <div class="cup__name" data-cup-name></div>
+        <div class="cup__stripe"></div>
+      </div>
+      <div class="cup__shadow"></div>
+    </div>
+    <figure class="hero__quote">
+      <blockquote data-hero-quote></blockquote>
+      <figcaption data-hero-author></figcaption>
+    </figure>
+    <div class="hero__cta">
+      <a href="#order" class="btn btn--light" data-hero-primary><span></span><i class="btn__arrow">→</i></a>
+      <a href="#menu" class="btn btn--line" data-hero-secondary></a>
+    </div>
+    <div class="hero__scroll" aria-hidden="true"><span data-i18n="hero.scroll">листайте</span><i></i></div>
+  </section>
+
+  <div class="sheet">
+
+    <!-- ============ 2. О НАС ============ -->
+    <section class="about stack" id="about">
+      <div class="about__media">
+        <div data-about-media></div>
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 120 120"><defs><path id="badgeCircle" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+            <text><textPath href="#badgeCircle" data-badge-text></textPath></text></svg>
+          <span>✦</span>
+        </div>
+      </div>
+      <div class="about__text">
+        <p class="kicker" data-about-label></p>
+        <h2 class="h2" data-about-title></h2>
+        <p class="lead" data-about-text></p>
+        <dl class="stats" data-about-stats></dl>
+      </div>
+    </section>
+
+    <!-- ============ 3. ВЫПЕЧКА И КОФЕ ============ -->
+    <section class="showcase dark stack" id="menu">
+      <div class="rows" aria-hidden="true">
+        <div class="row"><div class="row__track" data-gallery-a></div></div>
+        <div class="row"><div class="row__track" data-gallery-b></div></div>
+      </div>
+      <header class="showcase__head">
+        <h2 class="h2" data-show-title></h2>
+        <p class="muted" data-show-sub></p>
+      </header>
+      <svg class="showcase__line" viewBox="0 0 100 1000" preserveAspectRatio="none" aria-hidden="true">
+        <path data-show-path d="M50 0 C 90 120, 10 250, 50 370 S 90 620, 50 740 S 10 900, 50 1000"/>
+      </svg>
+      <div class="showcase__list" data-show-list></div>
+    </section>
+
+    <!-- ============ 4. КОФЕЙНАЯ КАРТА ============ -->
+    <section class="coffee stack" id="coffee">
+      <div class="coffee__aside">
+        <div class="coffee__beans" data-coffee-beans aria-hidden="true"></div>
+        <p class="kicker" data-coffee-label></p>
+        <h2 class="h2 h2--xl" data-coffee-title></h2>
+        <p class="lead" data-coffee-text></p>
+      </div>
+      <ol class="coffee__list" data-coffee-list></ol>
+      <div class="hover-preview" data-hover-preview aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ 5. КРУГОВАЯ ВИТРИНА ============ -->
+    <section class="vitrine dark stack">
+      <div class="vitrine__names" aria-hidden="true"><div class="vitrine__names-track" data-vitrine-names></div></div>
+      <div class="vitrine__stage" data-vitrine-stage>
+        <svg class="vitrine__ring" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+          <defs><path id="ringEllipse" d="M500,350 a440,150 0 1,1 0.1,0 Z"/></defs>
+          <ellipse cx="500" cy="200" rx="440" ry="150" class="vitrine__track"/>
+          <text><textPath href="#ringEllipse" data-vitrine-ring></textPath></text>
+        </svg>
+        <div class="vitrine__orbit" data-orbit></div>
+      </div>
+      <header class="vitrine__head">
+        <p class="kicker" data-vitrine-label></p>
+        <h2 class="h2 h2--xl" data-vitrine-title></h2>
+      </header>
+    </section>
+
+    <!-- ============ 6. ЗАКАЗ ============ -->
+    <section class="order" id="order">
+      <div class="rows rows--light" aria-hidden="true">
+        <div class="row"><div class="row__track" data-strip-a></div></div>
+        <div class="row"><div class="row__track" data-strip-b></div></div>
+      </div>
+      <header class="order__head">
+        <h2 class="h2 h2--xl" data-order-title></h2>
+        <ol class="steps" data-order-steps></ol>
+      </header>
+      <div class="chips" data-chips role="tablist"></div>
+      <div class="order__body">
+        <div class="grid" data-grid></div>
+        <aside class="cart" data-cart>
+          <div class="cart__head">
+            <h3 data-i18n="cart.title">Ваш заказ</h3>
+            <button class="cart__close" data-close-cart data-i18n-aria="cart.close">×</button>
+          </div>
+          <label class="cart__field">
+            <span data-i18n="cart.pickup">Самовывоз из кофейни</span>
+            <select data-branch-select></select>
+          </label>
+          <ul class="cart__items" data-cart-items></ul>
+          <div class="cart__sum">
+            <div><span data-i18n="cart.qty">Позиций</span><b data-cart-qty>0</b></div>
+            <div class="cart__total"><span data-i18n="cart.total">Итого</span><b data-cart-total>0</b></div>
+          </div>
+          <button class="btn btn--dark btn--block" data-checkout disabled></button>
+          <p class="cart__note" data-cart-note></p>
+          <div class="kaspi" data-kaspi hidden></div>
+        </aside>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ ПОДВАЛ ============ -->
+  <footer class="footer dark" id="contacts">
+    <div class="footer__top">
+      <a class="nav__brand nav__brand--lg" href="#top" data-brand></a>
+      <div class="footer__contact">
+        <a data-phone></a>
+        <a data-email></a>
+      </div>
+    </div>
+    <div class="footer__branches" data-branches></div>
+    <p class="footer__tz" data-timezone></p>
+    <div class="kaspi kaspi--footer" data-kaspi hidden></div>
+    <div class="footer__bottom">
+      <nav class="footer__socials" data-socials></nav>
+      <nav class="footer__docs" data-docs></nav>
+    </div>
+    <p class="footer__legal" data-legal></p>
+  </footer>
+</main>
+
+<!-- ============ ОФОРМЛЕНИЕ ЗАКАЗА ============ -->
+<dialog class="modal" data-modal>
+  <form class="modal__form" data-form novalidate>
+    <button type="button" class="modal__x" data-modal-close data-i18n-aria="modal.close">×</button>
+    <h3 class="h3" data-modal-title></h3>
+    <p class="muted" data-modal-summary></p>
+    <!-- Только в режиме server: имя и телефон -->
+    <label data-server-only><span data-i18n="modal.name">Имя</span><input name="name" autocomplete="name" maxlength="80"></label>
+    <label data-server-only><span data-i18n="modal.phone">Телефон</span><input name="phone" type="tel" inputmode="tel" autocomplete="tel" data-i18n-ph="modal.phonePh" placeholder="+7 7__"></label>
+    <label><span data-i18n="modal.comment">Комментарий</span><textarea name="comment" rows="2" maxlength="500" data-i18n-ph="modal.commentPh"></textarea></label>
+    <!-- Галочки не отмечены заранее; кнопка неактивна, пока они не отмечены -->
+    <label class="check"><input type="checkbox" name="agreeOffer" data-required> <span data-agree-offer></span></label>
+    <label class="check" data-server-only><input type="checkbox" name="agreePd" data-required> <span data-agree-pd></span></label>
+    <p class="modal__error" data-form-error role="alert" hidden></p>
+    <button class="btn btn--dark btn--block" type="submit" disabled></button>
+    <p class="modal__fine" data-modal-fine></p>
+  </form>
+  <div class="modal__done" data-done hidden>
+    <h3 class="h3" data-done-title></h3>
+    <p class="muted" data-done-text></p>
+    <a class="btn btn--dark btn--block" data-wa-again target="_blank" rel="noopener" hidden></a>
+    <div class="modal__row">
+      <button class="btn btn--line-dark" data-clear-cart hidden data-i18n="modal.clearCart">Очистить корзину</button>
+      <button class="btn btn--line-dark" data-modal-close data-i18n="modal.done">Готово</button>
+    </div>
+  </div>
+</dialog>
+
+<div class="cart-bar" data-cart-bar hidden>
+  <button class="btn btn--dark btn--block" data-open-cart><span data-i18n="cart.bar">Ваш заказ</span> · <b data-cart-bar-total></b></button>
+</div>
+
+<!-- Плавная прокрутка (Lenis, MIT) — лежит в папке сайта -->
+<script src="js/vendor/lenis.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/demo.js"></script>
+<script src="js/main.js"></script>
+<!-- 3D-стаканчик и зёрна (Three.js r159, MIT) — лежит в папке сайта. Без WebGL останется CSS-версия. -->
+<script src="js/vendor/three.min.js"></script>
+<script src="js/cup3d.js"></script>
+</body>
+</html>
